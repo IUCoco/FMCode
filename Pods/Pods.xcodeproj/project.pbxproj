@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033FDAEDD1B562153ADDFDB27BD21F7F /* XMGMiddleView.xib in Sources */ = {isa = PBXBuildFile; fileRef = E062518AA9A7FF88A8801B7ED9E1FC0B /* XMGMiddleView.xib */; };
+		0B0FE06C3646BA2047D7B31F10EF8FD0 /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 278C6C4B301A977CA8990B02B994F342 /* XMGNavigationController.m */; };
+		0B203C16EF85ADAF5ED0B2EE65C44475 /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259933076BC94C89A545B37393D0CC3 /* XMGTabBarController.m */; };
+		3085B5A81390D9879A382A733D0372BD /* XMGFMMain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CC87320D032D33BF9918D45E347BE2 /* XMGFMMain-dummy.m */; };
+		350815C6A394DD4F48B7C784E4640A58 /* Pods-XMGFM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BBF68F46EBD013B015C597C25E0511F /* Pods-XMGFM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3789C87D61B4D5A101CDD2B98A18D46B /* CALayer+PauseAimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 791A64523545F6911BF0A688DC11C7F5 /* CALayer+PauseAimate.m */; };
+		3CADF9F780B146875FDCDF776D1D49F0 /* XMGFMBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B7DC2C32992DC802A6A23B5E63FD1E /* XMGFMBase.framework */; };
+		417478726DB1A21E5B7BC5F2B0D63813 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C12EFFB54D7EE4B94F3AF754CB7BEDA /* Foundation.framework */; };
+		48D6880337A392F60ED28F210DCB624A /* XMGFMMain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4466897E66576BFC6B529B8D712D44 /* XMGFMMain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F78EEC93A451BA151D5D0C420E9FEC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C12EFFB54D7EE4B94F3AF754CB7BEDA /* Foundation.framework */; };
+		7A842C59AF2BBA0A626A3B7DA94326F1 /* XMGTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 311B08B3F683D4DEA7FEC4C97B139AAF /* XMGTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82B20B7AA1C6D0587A2A1A51F442BD81 /* XMGNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5921C7A8BD3BFC228D7C3BF200D9FF5E /* XMGNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AF19F4B8C2292704262F767DB15A64F /* XMGFMBase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E1434893B28CDBF30E3148352B112 /* XMGFMBase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D5B2DF0226D816481FD86E1ABCBE098 /* tabbar_np_playshadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D24061A0479D3868A88B89D7AB4022E /* tabbar_np_playshadow@2x.png */; };
+		A427472DB0499463A59DDB9C3C8ADCF2 /* XMGNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC56096F8420ACF0DFEF865DA9F789 /* XMGNavBar.m */; };
+		A749A0D100FE3969ECCB0AECE7D953B8 /* XMGFMMain.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33DC000C1DAA7B9181BE33A93877C0DC /* XMGFMMain.bundle */; };
+		A7C6BF83F02DED725A28555362AED0CE /* CALayer+PauseAimate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EA371B1BE74F48ED385DBCF2881BC0 /* CALayer+PauseAimate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEAC1509FB90BBB756E8F687731EA780 /* tabbar_np_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0D968F05BC1EE5E338FD4D930157195 /* tabbar_np_play@2x.png */; };
+		B1FECEB9E0681E99C9201E84A4E1E014 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 190CA15384FE1A89C59A930D1F41C0AF /* XMGTabBar.m */; };
+		BC20DE54DE107ABCE94CC8B8DA1371D9 /* XMGNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA2124CE470192F67BD649F51025E8B /* XMGNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C100F383D5CC3F2CB9C5C09F11A1B50B /* XMGFMBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 706E78CED3B07442440F7C3B71C0FF4D /* XMGFMBase-dummy.m */; };
+		CE698084382C0585326F316FDADFA6BA /* UIImage+XMGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD41F72D8A3E4DA30D31CF316198EDD /* UIImage+XMGImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDDC62DDF9F415FB7F8B0DD19C7FE93 /* UIView+XMGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2A4623AAEB7E509131DF25BB797201 /* UIView+XMGLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA93A85F67C2B44DD5EACE65ED75B2D /* Pods-XMGFM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3F3561BAD6091157CEAC39CF01EE77 /* Pods-XMGFM-dummy.m */; };
+		E086E22286FEDB15B265913C1E9C76AE /* UIView+XMGLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630D76B4BBA9E898255BDDF05152C4B /* UIView+XMGLayout.m */; };
+		E4BC8DD3D73545E9199132937EE4DD93 /* XMGMiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A1291A71B6AAB645C675F101330977 /* XMGMiddleView.m */; };
+		E65520B4EB10061194AD5BA5C1D9F6EF /* UIImage+XMGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 583ED67F2BA07F010E87B8385795CACD /* UIImage+XMGImage.m */; };
+		EC3A9903BEDBEB3E36DB0BD67B5A6352 /* tabbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B8BDEE1CC1C9D4435B7BA833AEF9232 /* tabbar_bg@2x.png */; };
+		EFB399D36A1776FF7AE4ECCA8BBAC6CA /* XMGMiddleView.h in Headers */ = {isa = PBXBuildFile; fileRef = D22FC233772BF446494522878FF1C259 /* XMGMiddleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7B3E0E10D43827E7128439E27F23C6A /* XMGTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A92E94C0245D51DCAC5DEAD5DAFAF9 /* XMGTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F81A0B420178D7BA1A46C47C35CDD63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C12EFFB54D7EE4B94F3AF754CB7BEDA /* Foundation.framework */; };
+		FB5449CE664E9F5E6E5C236F7A39F392 /* tabbar_np_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DE632FA4DC07A8B69DB99564B9E8CA3 /* tabbar_np_normal@2x.png */; };
+		FEE94714EA881387E9C7BAC30386E4EA /* tabbar_np_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24C46CC96C36567870B38BD892E22682 /* tabbar_np_shadow@2x.png */; };
+		FF2C5673726B7DAC66648352B81262E7 /* zxy_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C07AF599455EDB3A4875B951DAD20BD /* zxy_icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A68697744BB67A345750A53B391281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360B37DD18C8A5AA5F6408A68544F3EE;
+			remoteInfo = XMGFMBase;
+		};
+		0AF0D18F821258CDAEEEB80EA77FC94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360B37DD18C8A5AA5F6408A68544F3EE;
+			remoteInfo = XMGFMBase;
+		};
+		40D8B45C8BCF2B62341E3A28300B621A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39666C3FDF66F4DB9663A18C1D0CC59A;
+			remoteInfo = XMGFMMain;
+		};
+		90BDE0C4109F9D890940E1A6A2030F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05028D5529AF3F6B747C253DF9D9B8F5;
+			remoteInfo = "XMGFMMain-XMGFMMain";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EA371B1BE74F48ED385DBCF2881BC0 /* CALayer+PauseAimate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+PauseAimate.h"; path = "XMGFMBase/Classes/Category/CALayer+PauseAimate.h"; sourceTree = "<group>"; };
+		0DD41F72D8A3E4DA30D31CF316198EDD /* UIImage+XMGImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XMGImage.h"; path = "XMGFMBase/Classes/Category/UIImage+XMGImage.h"; sourceTree = "<group>"; };
+		0DE632FA4DC07A8B69DB99564B9E8CA3 /* tabbar_np_normal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "tabbar_np_normal@2x.png"; path = "XMGFMMain/Assets/tabbar_np_normal@2x.png"; sourceTree = "<group>"; };
+		15BC56096F8420ACF0DFEF865DA9F789 /* XMGNavBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGNavBar.m; path = XMGFMMain/Classes/View/XMGNavBar.m; sourceTree = "<group>"; };
+		16A1291A71B6AAB645C675F101330977 /* XMGMiddleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGMiddleView.m; path = XMGFMMain/Classes/View/XMGMiddleView.m; sourceTree = "<group>"; };
+		190CA15384FE1A89C59A930D1F41C0AF /* XMGTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGTabBar.m; path = XMGFMMain/Classes/View/XMGTabBar.m; sourceTree = "<group>"; };
+		1946DF6EA244C2930956ABEE1F0D9110 /* XMGFMBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGFMBase-prefix.pch"; sourceTree = "<group>"; };
+		1E4466897E66576BFC6B529B8D712D44 /* XMGFMMain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGFMMain-umbrella.h"; sourceTree = "<group>"; };
+		22D276BAB067638A42C8F0DFA49C2CF8 /* XMGFMMain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGFMMain-prefix.pch"; sourceTree = "<group>"; };
+		24C46CC96C36567870B38BD892E22682 /* tabbar_np_shadow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "tabbar_np_shadow@2x.png"; path = "XMGFMMain/Assets/tabbar_np_shadow@2x.png"; sourceTree = "<group>"; };
+		262EAE4AEC68FD4E4A4AB23BDCCFB254 /* Pods-XMGFM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-XMGFM.modulemap"; sourceTree = "<group>"; };
+		26E10EBD64730D6953BBE121CD1A3F8B /* XMGFMMain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XMGFMMain.modulemap; sourceTree = "<group>"; };
+		278C6C4B301A977CA8990B02B994F342 /* XMGNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGNavigationController.m; path = XMGFMMain/Classes/Controller/XMGNavigationController.m; sourceTree = "<group>"; };
+		2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGFMMain.xcconfig; sourceTree = "<group>"; };
+		311B08B3F683D4DEA7FEC4C97B139AAF /* XMGTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGTabBarController.h; path = XMGFMMain/Classes/Controller/XMGTabBarController.h; sourceTree = "<group>"; };
+		33DC000C1DAA7B9181BE33A93877C0DC /* XMGFMMain.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XMGFMMain.bundle; path = XMGFMMain.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8BDEE1CC1C9D4435B7BA833AEF9232 /* tabbar_bg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "tabbar_bg@2x.png"; path = "XMGFMMain/Assets/tabbar_bg@2x.png"; sourceTree = "<group>"; };
+		3FBC68F8D8F7663B33B0269A8B5D10E2 /* Pods-XMGFM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGFM-acknowledgements.plist"; sourceTree = "<group>"; };
+		52A122EB59CF5F48D011D0C74B77AFA0 /* ResourceBundle-XMGFMMain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XMGFMMain-Info.plist"; sourceTree = "<group>"; };
+		583ED67F2BA07F010E87B8385795CACD /* UIImage+XMGImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XMGImage.m"; path = "XMGFMBase/Classes/Category/UIImage+XMGImage.m"; sourceTree = "<group>"; };
+		5921C7A8BD3BFC228D7C3BF200D9FF5E /* XMGNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGNavBar.h; path = XMGFMMain/Classes/View/XMGNavBar.h; sourceTree = "<group>"; };
+		5BBF68F46EBD013B015C597C25E0511F /* Pods-XMGFM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMGFM-umbrella.h"; sourceTree = "<group>"; };
+		5F3F3561BAD6091157CEAC39CF01EE77 /* Pods-XMGFM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMGFM-dummy.m"; sourceTree = "<group>"; };
+		5FF4278FC1BA7E0E685CC290582DFA0B /* Pods_XMGFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XMGFM.framework; path = "Pods-XMGFM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		706E78CED3B07442440F7C3B71C0FF4D /* XMGFMBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMGFMBase-dummy.m"; sourceTree = "<group>"; };
+		7259933076BC94C89A545B37393D0CC3 /* XMGTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGTabBarController.m; path = XMGFMMain/Classes/Controller/XMGTabBarController.m; sourceTree = "<group>"; };
+		791A64523545F6911BF0A688DC11C7F5 /* CALayer+PauseAimate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+PauseAimate.m"; path = "XMGFMBase/Classes/Category/CALayer+PauseAimate.m"; sourceTree = "<group>"; };
+		7FD722CE800F9E718639C2A025A3C77F /* XMGFMBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGFMBase.xcconfig; sourceTree = "<group>"; };
+		8F2E1434893B28CDBF30E3148352B112 /* XMGFMBase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGFMBase-umbrella.h"; sourceTree = "<group>"; };
+		91B7DC2C32992DC802A6A23B5E63FD1E /* XMGFMBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMGFMBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9630D76B4BBA9E898255BDDF05152C4B /* UIView+XMGLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XMGLayout.m"; path = "XMGFMBase/Classes/Category/UIView+XMGLayout.m"; sourceTree = "<group>"; };
+		97978C81A6A2031FB85E04560391238C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C07AF599455EDB3A4875B951DAD20BD /* zxy_icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zxy_icon@2x.png"; path = "XMGFMMain/Assets/zxy_icon@2x.png"; sourceTree = "<group>"; };
+		9C12EFFB54D7EE4B94F3AF754CB7BEDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D24061A0479D3868A88B89D7AB4022E /* tabbar_np_playshadow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "tabbar_np_playshadow@2x.png"; path = "XMGFMMain/Assets/tabbar_np_playshadow@2x.png"; sourceTree = "<group>"; };
+		9F487E6B3DA55DD9E034E88D77D53E55 /* Pods-XMGFM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMGFM-frameworks.sh"; sourceTree = "<group>"; };
+		ADA2124CE470192F67BD649F51025E8B /* XMGNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGNavigationController.h; path = XMGFMMain/Classes/Controller/XMGNavigationController.h; sourceTree = "<group>"; };
+		B4D5604D4633068AC663C4894100404C /* XMGFMBase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XMGFMBase.modulemap; sourceTree = "<group>"; };
+		B56723E3D813C50AC01664FDE4B09997 /* Pods-XMGFM-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMGFM-resources.sh"; sourceTree = "<group>"; };
+		B6B0764254546B6D20370A229311993B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A92E94C0245D51DCAC5DEAD5DAFAF9 /* XMGTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGTabBar.h; path = XMGFMMain/Classes/View/XMGTabBar.h; sourceTree = "<group>"; };
+		BDF304CF060762867B2F16BC1B0621DC /* Pods-XMGFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGFM.release.xcconfig"; sourceTree = "<group>"; };
+		C0CC87320D032D33BF9918D45E347BE2 /* XMGFMMain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMGFMMain-dummy.m"; sourceTree = "<group>"; };
+		C0D968F05BC1EE5E338FD4D930157195 /* tabbar_np_play@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "tabbar_np_play@2x.png"; path = "XMGFMMain/Assets/tabbar_np_play@2x.png"; sourceTree = "<group>"; };
+		C61C322A188EE8124B46E4F1BF285266 /* XMGFMMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMGFMMain.framework; path = XMGFMMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC089FB8C1D0C56A6725713B177EA6A2 /* XMGFMBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMGFMBase.framework; path = XMGFMBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22FC233772BF446494522878FF1C259 /* XMGMiddleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGMiddleView.h; path = XMGFMMain/Classes/View/XMGMiddleView.h; sourceTree = "<group>"; };
+		D7470DB31E0916F20E12CDF3D23F7694 /* Pods-XMGFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGFM.debug.xcconfig"; sourceTree = "<group>"; };
+		DE5DEE2C3FA9DDB844E8B4C633D109B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E062518AA9A7FF88A8801B7ED9E1FC0B /* XMGMiddleView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = XMGMiddleView.xib; path = XMGFMMain/Classes/View/XMGMiddleView.xib; sourceTree = "<group>"; };
+		EA2A4623AAEB7E509131DF25BB797201 /* UIView+XMGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XMGLayout.h"; path = "XMGFMBase/Classes/Category/UIView+XMGLayout.h"; sourceTree = "<group>"; };
+		F26BBE339EA21373A8826C93ADE9ED89 /* Pods-XMGFM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMGFM-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094AF889DF6F2C3A41091906E49BA51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F78EEC93A451BA151D5D0C420E9FEC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C347A8443C397CB17C5FCAB3E8A64CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81A0B420178D7BA1A46C47C35CDD63B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7409464F58D999EFFE9E6536E064BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9AFECE913D02236D3D0394E6F493965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417478726DB1A21E5B7BC5F2B0D63813 /* Foundation.framework in Frameworks */,
+				3CADF9F780B146875FDCDF776D1D49F0 /* XMGFMBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166BBEDD87261F49DDF5982B12C7F4C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B8BDEE1CC1C9D4435B7BA833AEF9232 /* tabbar_bg@2x.png */,
+				0DE632FA4DC07A8B69DB99564B9E8CA3 /* tabbar_np_normal@2x.png */,
+				C0D968F05BC1EE5E338FD4D930157195 /* tabbar_np_play@2x.png */,
+				9D24061A0479D3868A88B89D7AB4022E /* tabbar_np_playshadow@2x.png */,
+				24C46CC96C36567870B38BD892E22682 /* tabbar_np_shadow@2x.png */,
+				9C07AF599455EDB3A4875B951DAD20BD /* zxy_icon@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18553873E8225A3CCD54A58A31876B6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FF4278FC1BA7E0E685CC290582DFA0B /* Pods_XMGFM.framework */,
+				CC089FB8C1D0C56A6725713B177EA6A2 /* XMGFMBase.framework */,
+				33DC000C1DAA7B9181BE33A93877C0DC /* XMGFMMain.bundle */,
+				C61C322A188EE8124B46E4F1BF285266 /* XMGFMMain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B000B8FBAF938C4B08029FC5A30337B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04EA371B1BE74F48ED385DBCF2881BC0 /* CALayer+PauseAimate.h */,
+				791A64523545F6911BF0A688DC11C7F5 /* CALayer+PauseAimate.m */,
+				0DD41F72D8A3E4DA30D31CF316198EDD /* UIImage+XMGImage.h */,
+				583ED67F2BA07F010E87B8385795CACD /* UIImage+XMGImage.m */,
+				EA2A4623AAEB7E509131DF25BB797201 /* UIView+XMGLayout.h */,
+				9630D76B4BBA9E898255BDDF05152C4B /* UIView+XMGLayout.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		3B2C689ED55B184CBA7FC4D24306171A /* Pods-XMGFM */ = {
+			isa = PBXGroup;
+			children = (
+				DE5DEE2C3FA9DDB844E8B4C633D109B2 /* Info.plist */,
+				262EAE4AEC68FD4E4A4AB23BDCCFB254 /* Pods-XMGFM.modulemap */,
+				F26BBE339EA21373A8826C93ADE9ED89 /* Pods-XMGFM-acknowledgements.markdown */,
+				3FBC68F8D8F7663B33B0269A8B5D10E2 /* Pods-XMGFM-acknowledgements.plist */,
+				5F3F3561BAD6091157CEAC39CF01EE77 /* Pods-XMGFM-dummy.m */,
+				9F487E6B3DA55DD9E034E88D77D53E55 /* Pods-XMGFM-frameworks.sh */,
+				B56723E3D813C50AC01664FDE4B09997 /* Pods-XMGFM-resources.sh */,
+				5BBF68F46EBD013B015C597C25E0511F /* Pods-XMGFM-umbrella.h */,
+				D7470DB31E0916F20E12CDF3D23F7694 /* Pods-XMGFM.debug.xcconfig */,
+				BDF304CF060762867B2F16BC1B0621DC /* Pods-XMGFM.release.xcconfig */,
+			);
+			name = "Pods-XMGFM";
+			path = "Target Support Files/Pods-XMGFM";
+			sourceTree = "<group>";
+		};
+		71180B13AE14A17F5CF6A9F30B82E008 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C689ED55B184CBA7FC4D24306171A /* Pods-XMGFM */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DDE54BEE28B5AB5F58A78CB3CB0ED17D /* Frameworks */,
+				E69AACB0BDF355FEE358F07CA3A76F67 /* Pods */,
+				18553873E8225A3CCD54A58A31876B6B /* Products */,
+				71180B13AE14A17F5CF6A9F30B82E008 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		803D3F14C0885AA949D4E02271CFDD09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6B0764254546B6D20370A229311993B /* Info.plist */,
+				52A122EB59CF5F48D011D0C74B77AFA0 /* ResourceBundle-XMGFMMain-Info.plist */,
+				26E10EBD64730D6953BBE121CD1A3F8B /* XMGFMMain.modulemap */,
+				2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */,
+				C0CC87320D032D33BF9918D45E347BE2 /* XMGFMMain-dummy.m */,
+				22D276BAB067638A42C8F0DFA49C2CF8 /* XMGFMMain-prefix.pch */,
+				1E4466897E66576BFC6B529B8D712D44 /* XMGFMMain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMGFMMain";
+			sourceTree = "<group>";
+		};
+		AF0CF1AAA880BDB2F2425CF2CCC6C44F /* XMGFMMain */ = {
+			isa = PBXGroup;
+			children = (
+				D22FC233772BF446494522878FF1C259 /* XMGMiddleView.h */,
+				16A1291A71B6AAB645C675F101330977 /* XMGMiddleView.m */,
+				E062518AA9A7FF88A8801B7ED9E1FC0B /* XMGMiddleView.xib */,
+				5921C7A8BD3BFC228D7C3BF200D9FF5E /* XMGNavBar.h */,
+				15BC56096F8420ACF0DFEF865DA9F789 /* XMGNavBar.m */,
+				ADA2124CE470192F67BD649F51025E8B /* XMGNavigationController.h */,
+				278C6C4B301A977CA8990B02B994F342 /* XMGNavigationController.m */,
+				B8A92E94C0245D51DCAC5DEAD5DAFAF9 /* XMGTabBar.h */,
+				190CA15384FE1A89C59A930D1F41C0AF /* XMGTabBar.m */,
+				311B08B3F683D4DEA7FEC4C97B139AAF /* XMGTabBarController.h */,
+				7259933076BC94C89A545B37393D0CC3 /* XMGTabBarController.m */,
+				166BBEDD87261F49DDF5982B12C7F4C8 /* Resources */,
+				803D3F14C0885AA949D4E02271CFDD09 /* Support Files */,
+			);
+			name = XMGFMMain;
+			path = XMGFMMain;
+			sourceTree = "<group>";
+		};
+		C09EC246FE16B6D6C83501FE5BFC131F /* XMGFMBase */ = {
+			isa = PBXGroup;
+			children = (
+				3B000B8FBAF938C4B08029FC5A30337B /* Category */,
+				FC71808FF9C974A7C65D9ED05F9CE134 /* Support Files */,
+			);
+			name = XMGFMBase;
+			path = XMGFMBase;
+			sourceTree = "<group>";
+		};
+		DDE54BEE28B5AB5F58A78CB3CB0ED17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91B7DC2C32992DC802A6A23B5E63FD1E /* XMGFMBase.framework */,
+				EFB9907B2C81D8B320972713BA21D2C0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E69AACB0BDF355FEE358F07CA3A76F67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C09EC246FE16B6D6C83501FE5BFC131F /* XMGFMBase */,
+				AF0CF1AAA880BDB2F2425CF2CCC6C44F /* XMGFMMain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFB9907B2C81D8B320972713BA21D2C0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9C12EFFB54D7EE4B94F3AF754CB7BEDA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC71808FF9C974A7C65D9ED05F9CE134 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97978C81A6A2031FB85E04560391238C /* Info.plist */,
+				B4D5604D4633068AC663C4894100404C /* XMGFMBase.modulemap */,
+				7FD722CE800F9E718639C2A025A3C77F /* XMGFMBase.xcconfig */,
+				706E78CED3B07442440F7C3B71C0FF4D /* XMGFMBase-dummy.m */,
+				1946DF6EA244C2930956ABEE1F0D9110 /* XMGFMBase-prefix.pch */,
+				8F2E1434893B28CDBF30E3148352B112 /* XMGFMBase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMGFMBase";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D8F48605D0C5119BAEC4586D2EB842E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D6880337A392F60ED28F210DCB624A /* XMGFMMain-umbrella.h in Headers */,
+				EFB399D36A1776FF7AE4ECCA8BBAC6CA /* XMGMiddleView.h in Headers */,
+				82B20B7AA1C6D0587A2A1A51F442BD81 /* XMGNavBar.h in Headers */,
+				BC20DE54DE107ABCE94CC8B8DA1371D9 /* XMGNavigationController.h in Headers */,
+				F7B3E0E10D43827E7128439E27F23C6A /* XMGTabBar.h in Headers */,
+				7A842C59AF2BBA0A626A3B7DA94326F1 /* XMGTabBarController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60D77A4797095B2458512754C868590B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350815C6A394DD4F48B7C784E4640A58 /* Pods-XMGFM-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CBEEFC820973368E0B5B8D91793250 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C6BF83F02DED725A28555362AED0CE /* CALayer+PauseAimate.h in Headers */,
+				CE698084382C0585326F316FDADFA6BA /* UIImage+XMGImage.h in Headers */,
+				DBDDC62DDF9F415FB7F8B0DD19C7FE93 /* UIView+XMGLayout.h in Headers */,
+				9AF19F4B8C2292704262F767DB15A64F /* XMGFMBase-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05028D5529AF3F6B747C253DF9D9B8F5 /* XMGFMMain-XMGFMMain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B812CCBFB822FA63F7EC42E3808A2B09 /* Build configuration list for PBXNativeTarget "XMGFMMain-XMGFMMain" */;
+			buildPhases = (
+				83D94D20C06278F7136F5EB6A6254F3F /* Sources */,
+				CF7409464F58D999EFFE9E6536E064BD /* Frameworks */,
+				46885054C6864BFCB9CEEF0FD12F1A18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XMGFMMain-XMGFMMain";
+			productName = "XMGFMMain-XMGFMMain";
+			productReference = 33DC000C1DAA7B9181BE33A93877C0DC /* XMGFMMain.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		360B37DD18C8A5AA5F6408A68544F3EE /* XMGFMBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEECC22AF248EB44C01EE9FAD4C360DF /* Build configuration list for PBXNativeTarget "XMGFMBase" */;
+			buildPhases = (
+				FA09C304EA605050B516186B3301CE57 /* Sources */,
+				094AF889DF6F2C3A41091906E49BA51C /* Frameworks */,
+				C6CBEEFC820973368E0B5B8D91793250 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMGFMBase;
+			productName = XMGFMBase;
+			productReference = CC089FB8C1D0C56A6725713B177EA6A2 /* XMGFMBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39666C3FDF66F4DB9663A18C1D0CC59A /* XMGFMMain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B995ECFD20D562B4E693F931CFAA6AB4 /* Build configuration list for PBXNativeTarget "XMGFMMain" */;
+			buildPhases = (
+				F1C64D4090E0A8F8F7EBEC532A22A455 /* Sources */,
+				D9AFECE913D02236D3D0394E6F493965 /* Frameworks */,
+				C8D0408FB3774F3FFD96A33550AEBA32 /* Resources */,
+				5D8F48605D0C5119BAEC4586D2EB842E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C7CED3C2A836B60FA27136B025A77B /* PBXTargetDependency */,
+				590DEED5D67ECD7C127156481E206C67 /* PBXTargetDependency */,
+			);
+			name = XMGFMMain;
+			productName = XMGFMMain;
+			productReference = C61C322A188EE8124B46E4F1BF285266 /* XMGFMMain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		645FF4BE9D24940AC30D2F631041C4BD /* Pods-XMGFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190FA36E3842E57A1F1B631737F419AF /* Build configuration list for PBXNativeTarget "Pods-XMGFM" */;
+			buildPhases = (
+				49B1AD712A72969BBCA6F0A53E6AA217 /* Sources */,
+				5C347A8443C397CB17C5FCAB3E8A64CF /* Frameworks */,
+				60D77A4797095B2458512754C868590B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3216B989565B05036AEC20F75819DD9E /* PBXTargetDependency */,
+				1066EC5C10556FD39B3F2C663394DA40 /* PBXTargetDependency */,
+			);
+			name = "Pods-XMGFM";
+			productName = "Pods-XMGFM";
+			productReference = 5FF4278FC1BA7E0E685CC290582DFA0B /* Pods_XMGFM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 18553873E8225A3CCD54A58A31876B6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				645FF4BE9D24940AC30D2F631041C4BD /* Pods-XMGFM */,
+				360B37DD18C8A5AA5F6408A68544F3EE /* XMGFMBase */,
+				39666C3FDF66F4DB9663A18C1D0CC59A /* XMGFMMain */,
+				05028D5529AF3F6B747C253DF9D9B8F5 /* XMGFMMain-XMGFMMain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46885054C6864BFCB9CEEF0FD12F1A18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3A9903BEDBEB3E36DB0BD67B5A6352 /* tabbar_bg@2x.png in Resources */,
+				FB5449CE664E9F5E6E5C236F7A39F392 /* tabbar_np_normal@2x.png in Resources */,
+				AEAC1509FB90BBB756E8F687731EA780 /* tabbar_np_play@2x.png in Resources */,
+				9D5B2DF0226D816481FD86E1ABCBE098 /* tabbar_np_playshadow@2x.png in Resources */,
+				FEE94714EA881387E9C7BAC30386E4EA /* tabbar_np_shadow@2x.png in Resources */,
+				FF2C5673726B7DAC66648352B81262E7 /* zxy_icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D0408FB3774F3FFD96A33550AEBA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A749A0D100FE3969ECCB0AECE7D953B8 /* XMGFMMain.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B1AD712A72969BBCA6F0A53E6AA217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA93A85F67C2B44DD5EACE65ED75B2D /* Pods-XMGFM-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D94D20C06278F7136F5EB6A6254F3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C64D4090E0A8F8F7EBEC532A22A455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3085B5A81390D9879A382A733D0372BD /* XMGFMMain-dummy.m in Sources */,
+				E4BC8DD3D73545E9199132937EE4DD93 /* XMGMiddleView.m in Sources */,
+				033FDAEDD1B562153ADDFDB27BD21F7F /* XMGMiddleView.xib in Sources */,
+				A427472DB0499463A59DDB9C3C8ADCF2 /* XMGNavBar.m in Sources */,
+				0B0FE06C3646BA2047D7B31F10EF8FD0 /* XMGNavigationController.m in Sources */,
+				B1FECEB9E0681E99C9201E84A4E1E014 /* XMGTabBar.m in Sources */,
+				0B203C16EF85ADAF5ED0B2EE65C44475 /* XMGTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA09C304EA605050B516186B3301CE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3789C87D61B4D5A101CDD2B98A18D46B /* CALayer+PauseAimate.m in Sources */,
+				E65520B4EB10061194AD5BA5C1D9F6EF /* UIImage+XMGImage.m in Sources */,
+				E086E22286FEDB15B265913C1E9C76AE /* UIView+XMGLayout.m in Sources */,
+				C100F383D5CC3F2CB9C5C09F11A1B50B /* XMGFMBase-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1066EC5C10556FD39B3F2C663394DA40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMGFMMain;
+			target = 39666C3FDF66F4DB9663A18C1D0CC59A /* XMGFMMain */;
+			targetProxy = 40D8B45C8BCF2B62341E3A28300B621A /* PBXContainerItemProxy */;
+		};
+		3216B989565B05036AEC20F75819DD9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMGFMBase;
+			target = 360B37DD18C8A5AA5F6408A68544F3EE /* XMGFMBase */;
+			targetProxy = 0AF0D18F821258CDAEEEB80EA77FC94A /* PBXContainerItemProxy */;
+		};
+		590DEED5D67ECD7C127156481E206C67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XMGFMMain-XMGFMMain";
+			target = 05028D5529AF3F6B747C253DF9D9B8F5 /* XMGFMMain-XMGFMMain */;
+			targetProxy = 90BDE0C4109F9D890940E1A6A2030F24 /* PBXContainerItemProxy */;
+		};
+		75C7CED3C2A836B60FA27136B025A77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMGFMBase;
+			target = 360B37DD18C8A5AA5F6408A68544F3EE /* XMGFMBase */;
+			targetProxy = 00A68697744BB67A345750A53B391281 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DD732E050A39669C302410B0C7536E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF304CF060762867B2F16BC1B0621DC /* Pods-XMGFM.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGFM/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGFM/Pods-XMGFM.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XMGFM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		444375928C43B6D7FDCDFEE1AB34ECDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XMGFMMain";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XMGFMMain/ResourceBundle-XMGFMMain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XMGFMMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		65588F9599F231A877D491A30194FA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMGFMMain/XMGFMMain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGFMMain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGFMMain/XMGFMMain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XMGFMMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A9574B0D65A5A7BEDC8719B18120B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7470DB31E0916F20E12CDF3D23F7694 /* Pods-XMGFM.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGFM/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGFM/Pods-XMGFM.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XMGFM;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		965AC292934132586B1A6443EFEBF0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMGFMMain/XMGFMMain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGFMMain/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGFMMain/XMGFMMain.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XMGFMMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9D3B4895C0ECB83967236D9FAC1ACA87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F74C691B38DA0308046DCB907856FDC /* XMGFMMain.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XMGFMMain";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XMGFMMain/ResourceBundle-XMGFMMain-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XMGFMMain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		AB2FCC4D22054816B1F199C088445E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD722CE800F9E718639C2A025A3C77F /* XMGFMBase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMGFMBase/XMGFMBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGFMBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGFMBase/XMGFMBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XMGFMBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D659525E002FBB8E1A2FF387042ADB09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD722CE800F9E718639C2A025A3C77F /* XMGFMBase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XMGFMBase/XMGFMBase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGFMBase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGFMBase/XMGFMBase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XMGFMBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190FA36E3842E57A1F1B631737F419AF /* Build configuration list for PBXNativeTarget "Pods-XMGFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9574B0D65A5A7BEDC8719B18120B24 /* Debug */,
+				0DD732E050A39669C302410B0C7536E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B812CCBFB822FA63F7EC42E3808A2B09 /* Build configuration list for PBXNativeTarget "XMGFMMain-XMGFMMain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				444375928C43B6D7FDCDFEE1AB34ECDA /* Debug */,
+				9D3B4895C0ECB83967236D9FAC1ACA87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B995ECFD20D562B4E693F931CFAA6AB4 /* Build configuration list for PBXNativeTarget "XMGFMMain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965AC292934132586B1A6443EFEBF0EF /* Debug */,
+				65588F9599F231A877D491A30194FA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEECC22AF248EB44C01EE9FAD4C360DF /* Build configuration list for PBXNativeTarget "XMGFMBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2FCC4D22054816B1F199C088445E61 /* Debug */,
+				D659525E002FBB8E1A2FF387042ADB09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

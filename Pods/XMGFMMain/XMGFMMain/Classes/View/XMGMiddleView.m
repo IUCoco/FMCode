@@ -38,8 +38,11 @@ static XMGMiddleView *_shareInstance;
 
 
 + (instancetype)middleView {
+    
+    //此处注意bundle位置，在frameWork底下而不是mainBundle下
+    NSBundle *currentBundle = [NSBundle bundleForClass:self];
 
-    XMGMiddleView *middleView = [[[NSBundle mainBundle] loadNibNamed:@"XMGMiddleView" owner:nil options:nil] firstObject];
+    XMGMiddleView *middleView = [[currentBundle loadNibNamed:@"XMGMiddleView" owner:nil options:nil] firstObject];
     return middleView;
 }
 

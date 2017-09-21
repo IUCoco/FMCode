@@ -55,7 +55,13 @@
     self.barStyle = UIBarStyleBlack;
 
     // 设置tabbar 背景图片
-    self.backgroundImage = [UIImage imageNamed:@"tabbar_bg"];
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    
+    NSString *imagePath = [currentBundle pathForResource:@"tabbar_bg@2x.png" ofType:nil inDirectory:@"XMGFMMain.bundle"];
+    
+    UIImage *tabBg = [UIImage imageWithContentsOfFile:imagePath];
+    
+    self.backgroundImage = tabBg;
 
 
     // 添加一个按钮, 准备放在中间
