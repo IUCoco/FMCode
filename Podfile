@@ -8,6 +8,6 @@ target 'XMGFM' do
 
    #pod 'XMGFMBase/Base'
    #pod 'XMGFMBase', :subspecs => ['Base', 'Category', 'Tool']
-  pod 'XMGFMMain', '~> 0.1.0'
+  pod 'XMGFMMain', '~> 0.1.1'
 
 end
